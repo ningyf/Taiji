@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Taiji</title>
+    <style type="text/css">
+      body {
+        background: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+      .taiji {
+        margin: 0 auto;
+        width: 0;
+        height: 300px;
+        border-left: 150px solid #fff;
+        border-right: 150px solid #000;
+        border-radius: 150px;
+      }
+      .taiji::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: #000;
+        border: 60px solid #fff;
+        border-radius: 150px;
+        margin-left: -75px;
+      }
+      .taiji::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border: 60px solid #000;
+        border-radius: 150px;
+        margin-left: -75px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="taiji"></div>
+  </body>
+</html>
